@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+{% block contenu %}
+<h1>Cette page affichera le descriptif du stage ayant pour identifiant {{idStage}}</h1>
+<div class="card" style="width: 50rem;">
+  <img src="..." class="card-img-top" alt="Image stage">
+  <div class="card-body">
+    <h5 class="card-title">Nom stage</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Cras justo odio</li>
+    <li class="list-group-item">Dapibus ac facilisis in</li>
+    <li class="list-group-item">Vestibulum at eros</li>
+  </ul>
+</div>
+{% endblock %}

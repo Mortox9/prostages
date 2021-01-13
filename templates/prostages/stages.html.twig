@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+{% block contenu %}
+<h1>Cette page affichera la liste des stages proposés</h1>
+<table class="table table-light table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Nom Entreprise</th>
+      <th scope="col">Formation</th>
+      <th scope="col">Nom du Stage</th>
+      <th scope="col">Lieu</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr class="table-light">
+      <th scope="row"">Nom Entreprise</td>
+      <td class="table-light">Formation</td>
+      <td class="table-light">
+      <a class="nav-link" href="{{path('prostages_stageId',{id:1111})}}">Nom du Stage</a>
+      </td>
+      <td class="table-light">Lieu</td>
+    </tr>
+
+    <tr class="table-light">
+      <th scope="row"">Nom Entreprise</td>
+      <td class="table-light">Formation</td>
+      <td class="table-light">
+      <a class="nav-link" href="{{path('prostages_stageId',{id:1111})}}">Nom du Stage</a>
+      </td>
+      <td class="table-light">Lieu</td>
+    </tr>
+    <tr class="table-light">
+      <th scope="row"">Nom Entreprise</td>
+      <td class="table-light">Formation</td>
+      <td class="table-light">
+      <a class="nav-link" href="{{path('prostages_stageId',{id:1111})}}">Nom du Stage</a>
+      </td>
+      <td class="table-light">Lieu</td>
+    </tr>
+    <tr class="table-light">
+      <th scope="row"">Nom Entreprise</td>
+      <td class="table-light">Formation</td>
+      <td class="table-light">
+      <a class="nav-link" href="{{path('prostages_stageId',{id:1111})}}">Nom du Stage</a>
+      </td>
+      <td class="table-light">Lieu</td>
+    </tr>
+  </tbody>
+</table>
+{% endblock %}
