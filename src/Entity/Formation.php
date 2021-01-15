@@ -17,32 +17,32 @@ class Formation
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
      */
-    private $id;
+    private $id;  //Identifiant généré automatiquement
 
     /**
      * @ORM\Column(type="string", length=150)
      */
-    private $intitule;
+    private $intitule;  //Intitulé de la Formation
 
     /**
      * @ORM\Column(type="string", length=150)
      */
-    private $niveau;
+    private $niveau;  //Niveau de la Formation
 
     /**
      * @ORM\Column(type="string", length=150)
      */
-    private $ville;
+    private $ville; //Ville de la Formation
 
     /**
      * @ORM\Column(type="string", length=244)
      */
-    private $description;
+    private $description; //Description de la Formation
 
     /**
      * @ORM\OneToMany(targetEntity=Stage::class, mappedBy="Formation")
      */
-    private $stages;
+    private $stages;  //Liste des stages liés à cette Formation
 
     public function __construct()
     {

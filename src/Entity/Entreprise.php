@@ -17,37 +17,37 @@ class Entreprise
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
      */
-    private $id;
+    private $id;  //Identifiant de l'Entreprise généré automatiquement
 
     /**
      * @ORM\Column(type="string", length=150)
      */
-    private $nom;
+    private $nom; //Nom de l'Entreprise
 
     /**
      * @ORM\Column(type="string", length=150)
      */
-    private $adresse;
+    private $adresse; //Adresse de l'Entreprise
 
     /**
      * @ORM\Column(type="string", length=150)
      */
-    private $milieu;
+    private $milieu;  //Milieu de l'Entreprise
 
     /**
      * @ORM\Column(type="string", length=14)
      */
-    private $telephone;
+    private $telephone; //Téléphone de l'Entreprise
 
     /**
      * @ORM\Column(type="string", length=150, nullable=true)
      */
-    private $photo;
+    private $photo; //Url de la photo de l'Entreprise
 
     /**
      * @ORM\OneToMany(targetEntity=Stage::class, mappedBy="entreprise")
      */
-    private $stages;
+    private $stages;  //Liste des Stages liés à cette Entreprise
 
     public function __construct()
     {

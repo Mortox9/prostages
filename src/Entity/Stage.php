@@ -15,49 +15,49 @@ class Stage
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
      */
-    private $id;
+    private $id;  //Identifiant généré automatiquement
 
     /**
      * @ORM\Column(type="string", length=150)
      */
-    private $intitule;
+    private $intitule;  //Intitulé du Stage
 
     /**
      * @ORM\Column(type="string", length=480)
      */
-    private $description;
+    private $description; //Description du Stage
 
     /**
      * @ORM\Column(type="datetime")
      */
-    private $dateDebut;
+    private $dateDebut; //Date de commencement du Stage
 
     /**
      * @ORM\Column(type="string", length=15)
      */
-    private $duree;
+    private $duree; //Durée totale du Stage
 
     /**
      * @ORM\Column(type="string", length=288)
      */
-    private $competencesRequises;
+    private $competencesRequises; //Compétences exigées pour postuler au Stage
 
     /**
      * @ORM\Column(type="string", length=288)
      */
-    private $experienceRequise;
+    private $experienceRequise; //Expérience exigée pour postuler au Stage
 
     /**
      * @ORM\ManyToOne(targetEntity=Formation::class, inversedBy="stages")
      * @ORM\JoinColumn(nullable=false)
      */
-    private $Formation;
+    private $Formation; //Formation à laquelle le Stage est destiné
 
     /**
      * @ORM\ManyToOne(targetEntity=Entreprise::class, inversedBy="stages")
      * @ORM\JoinColumn(nullable=false)
      */
-    private $entreprise;
+    private $entreprise;  //Entreprise qui propose le Stage
 
     public function getId(): ?int
     {
